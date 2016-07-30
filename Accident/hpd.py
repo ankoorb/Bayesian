@@ -1,3 +1,5 @@
+# Source: https://github.com/aloctavodia/Doing_bayesian_data_analysis
+
 import numpy as np
 
 def calc_min_interval(x, alpha):

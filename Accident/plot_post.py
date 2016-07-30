@@ -1,3 +1,5 @@
+# Source: https://github.com/aloctavodia/Doing_bayesian_data_analysis
+
 # Function to plot posterior
 import numpy as np
 from scipy import stats
@@ -65,6 +67,7 @@ def plot_post(param_sample_vec, cred_mass = 0.95, comp_val = False, ROPE = False
     # Display the HDI
     plt.plot(HDI, [0, 0], linewidth = 6, color = 'k', label = 'HDI %0.1f%% %0.3f-%0.3f' % (cred_mass*100, HDI[0], HDI[1]))
     plt.legend(loc = 'upper left', fontsize = fontsize, framealpha = framealpha)
+    plt.title(title)
     
     
     return posterior_summary
